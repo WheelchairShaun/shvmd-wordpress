@@ -1,6 +1,6 @@
 <?php
 /**
- * Template part for displaying The hero banner content in page-home.php.
+ * Template part for displaying the company information content in footer.php.
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
