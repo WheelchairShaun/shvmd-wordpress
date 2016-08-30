@@ -45,7 +45,7 @@
 
 								'theme_location'	=> 'footer',
 								'container'			=> 'nav',
-								'menu_class'		=> 'list-unstyled',
+								'items_wrap'		=> '<ul class="list-unstyled">%3$s</ul>',
 
 							)
 						);

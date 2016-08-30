@@ -28,24 +28,29 @@ $footer_hours_2				= get_field( 'ci_office_hours_2' );
 <address>
 	<div class="vcard">
 		<div class="org fn">
-			<div class="organization-name">Signature Healthcare of Volusia</div>
+			<div class="organization-name"><?php echo $footer_organization_name; ?></div>
 		</div>
 		<div class="adr">
-			<div class="street-address">801 Beville Rd #201</div>
-			<span class="locality">South Daytona</span>, 
-			<span class="region">FL</span> 
-			<span class="postal-code">32119</span>
+			<div class="street-address"><?php echo $footer_street_address; ?></div>
+			<?php echo !empty( $footer_extended_address ) ? '<div class="street-address">' . $footer_extended_address . '</div>' : ''; ?>
+			<span class="locality"><?php echo $footer_locality; ?></span>, 
+			<span class="region"><?php echo $footer_region; ?></span> 
+			<span class="postal-code"><?php echo $footer_postal_code; ?></span>
 		</div>
 		<div class="tel">
-			<span class="type">Voice</span> <span class="value">386-322-5200</span>
+			<span class="type">Voice</span> <span class="value"><?php echo $footer_voice; ?></span>
 		</div>
+		<?php if( !empty( $footer_fax ) ) : ?>
 		<div class="tel">
-			<span class="type">Fax</span> <span class="value">386-767-0062</span>
+			<span class="type">Fax</span> <span class="value"><?php echo $footer_fax; ?></span>
 		</div>
+		<?php endif; ?>
 	</div>
 	<div class="office-hours">
 		<span class="type">Office Hours</span> 
-		<div class="hours-entry"><span class="days">Mon - Thurs</span>, <span class="hours">8am - 4pm</span></div>
-		<div class="hours-entry"><span class="days">Fri</span>, <span class="hours">8am - 12pm</span></div>
+		<div class="hours-entry"><span class="days"><?php echo $footer_days_1; ?></span>, <span class="hours"><?php echo $footer_hours_1; ?></span></div>
+		<?php if( !empty( $footer_days_2 ) ) : ?>
+		<div class="hours-entry"><span class="days"><?php echo $footer_days_2; ?></span>, <span class="hours"><?php echo $footer_hours_2; ?></span></div>
+		<?php endif; ?>
 	</div>
 </address>
