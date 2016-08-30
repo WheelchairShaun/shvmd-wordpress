@@ -55,9 +55,7 @@
 				</div><!--/.col-->
 
 				<div class="col-sm-6 col-md-5 col-md-offset-1 col-lg-5 col-lg-offset-1">
-
 					<?php get_template_part( 'template-parts/footer', 'company' ); ?>
-
 				</div><!--/.col-->
 
 			</div><!--/.row-->
