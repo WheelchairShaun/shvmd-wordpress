@@ -13,6 +13,12 @@ $hero_headline_1		= get_field( 'hero_headline_1' );
 $hero_headline_2		= get_field( 'hero_headline_2' );
 $hero_description		= get_field( 'hero_description' );
 
+$hero_phone				= get_field( 'ci_telephone_voice' );
+$hero_days_1			= get_field( 'ci_office_days_1' );
+$hero_hours_1			= get_field( 'ci_office_hours_1' );
+$hero_days_2			= get_field( 'ci_office_days_2' );
+$hero_hours_2			= get_field( 'ci_office_hours_2' );
+
 ?>
 
 <!-- Jumbotron -->
@@ -42,10 +48,12 @@ $hero_description		= get_field( 'hero_description' );
 					<div class="phone">
 						<h4>Call</h4>
 
-						<span class="tel">386-322-5200</span>
+						<span class="tel"><?php echo $hero_phone; ?></span>
 						<div class="office-hours">
-							<div class="hours-entry"><span class="days">Mon - Thurs</span> <span class="hours">8am - 5pm</span></div>
-							<div class="hours-entry"><span class="days">Fri</span> <span class="hours">8am - 12pm</span></div>
+							<div class="hours-entry"><span class="days"><?php echo $hero_days_1; ?></span> <span class="hours"><?php echo $hero_hours_1; ?></span></div>
+							<?php if( !empty($hero_days_2) ) : ?>
+							<div class="hours-entry"><span class="days"><?php echo $hero_days_2; ?></span> <span class="hours"><?php echo $hero_hours_2; ?></span></div>
+							<?php endif; ?>
 						</div><!--/.operations-->
 					</div><!--/.phone-->
 				</div><!--/.call-now-->
