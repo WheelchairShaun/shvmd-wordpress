@@ -11,6 +11,10 @@ get_header(); ?>
 
 <?php get_template_part( 'template-parts/home', 'better_healthcare' ); ?>
 
+<hr class="section-divider">
+
+<?php get_template_part( 'template-parts/home', 'who_member' ); ?>
+
 </main>
 
 <?php
