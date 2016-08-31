@@ -15,6 +15,8 @@ get_header(); ?>
 
 <?php get_template_part( 'template-parts/home', 'who_member' ); ?>
 
+<?php get_template_part( 'template-parts/home', 'member_benefits' ); ?>
+
 </main>
 
 <?php
