@@ -1,6 +1,6 @@
 <?php
 /**
- * Template part for displaying The hero banner content in page-home.php.
+ * Template part for displaying the hero banner content in page-home.php.
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
