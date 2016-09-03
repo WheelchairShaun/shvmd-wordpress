@@ -8,20 +8,20 @@
  */
 
 // Advanced Custom Fields
-$footer_organization_name	= get_field( 'ci_company_name' );
-$footer_street_address		= get_field( 'ci_street_address' );
-$footer_extended_address	= get_field( 'ci_extended_address' );
-$footer_locality			= get_field( 'ci_locality' );
-$footer_region				= get_field( 'ci_region' );
-$footer_postal_code			= get_field( 'ci_postal_code' );
+$footer_organization_name	= get_field( 'ci_company_name', 7 );
+$footer_street_address		= get_field( 'ci_street_address', 7 );
+$footer_extended_address	= get_field( 'ci_extended_address', 7 );
+$footer_locality			= get_field( 'ci_locality', 7 );
+$footer_region				= get_field( 'ci_region', 7 );
+$footer_postal_code			= get_field( 'ci_postal_code', 7 );
 
-$footer_voice				= get_field( 'ci_telephone_voice' );
-$footer_fax					= get_field( 'ci_telephone_fax' );
+$footer_voice				= get_field( 'ci_telephone_voice', 7 );
+$footer_fax					= get_field( 'ci_telephone_fax', 7 );
 
-$footer_days_1				= get_field( 'ci_office_days_1' );
-$footer_hours_1				= get_field( 'ci_office_hours_1' );
-$footer_days_2				= get_field( 'ci_office_days_2' );
-$footer_hours_2				= get_field( 'ci_office_hours_2' );
+$footer_days_1				= get_field( 'ci_office_days_1', 7 );
+$footer_hours_1				= get_field( 'ci_office_hours_1', 7 );
+$footer_days_2				= get_field( 'ci_office_days_2', 7 );
+$footer_hours_2				= get_field( 'ci_office_hours_2', 7 );
 
 ?>
 
