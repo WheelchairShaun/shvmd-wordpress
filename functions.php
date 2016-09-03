@@ -141,16 +141,16 @@ require get_template_directory() . '/inc/customizer.php';
 require get_template_directory() . '/inc/jetpack.php';
 
 /**
- * Add filter to insert contact modal in wp_nav_menus
+ * Add filter to insert contact modal in wp_nav_menu links
  */
 add_filter( 'nav_menu_link_attributes', 'shvmd_contact_menu_atts', 10, 3 );
 function shvmd_contact_menu_atts( $atts, $item, $args )
 {
-  // The ID of the target menu item
-  $menu_target = 46;
+  // The IDs of the target menu items
+  $menu_targets = array( 46, 50 );
 
   // inspect $item
-  if ($item->ID == $menu_target) {
+  if ( in_array( $item->ID, $menu_targets ) ) {
     $atts['data-toggle'] = 'modal';
   }
   return $atts;
