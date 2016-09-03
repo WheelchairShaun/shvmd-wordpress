@@ -139,3 +139,19 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
+/**
+ * Add filter to insert contact modal in wp_nav_menus
+ */
+add_filter( 'nav_menu_link_attributes', 'shvmd_contact_menu_atts', 10, 3 );
+function shvmd_contact_menu_atts( $atts, $item, $args )
+{
+  // The ID of the target menu item
+  $menu_target = 46;
+
+  // inspect $item
+  if ($item->ID == $menu_target) {
+    $atts['data-toggle'] = 'modal';
+  }
+  return $atts;
+}
