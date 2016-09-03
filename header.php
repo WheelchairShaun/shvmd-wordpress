@@ -53,7 +53,7 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand" href="/"><img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/signature-logo-black.png" alt="Signature Healthcare of Volusia"></a>
+					<a class="navbar-brand" href="<?php echo home_url(); ?>"><img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/signature-logo-black.png" alt="Signature Healthcare of Volusia"></a>
 				</div><!--/.navbar-header-->
 
 				<!-- Nav links collection that will be collapsed -->
