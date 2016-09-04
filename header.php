@@ -9,6 +9,10 @@
  * @package Signature_Healthcare_of_Volusia
  */
 
+// Advanced Custom Fields
+$seo_description	= get_field( 'seo_description', 7 );
+$seo_keywords		= get_field( 'seo_keywords', 7 );
+
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
@@ -16,6 +20,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+	<meta name="description" content="<?php echo $seo_description; ?>">
+	<meta name="keywords" content="<?php echo $seo_keywords; ?>">
 
 	<!-- Bootstrap -->
 	<link href="<?php bloginfo( 'stylesheet_directory' ); ?>/css/bootstrap.min.css" rel="stylesheet">
