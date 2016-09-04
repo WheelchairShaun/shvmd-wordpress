@@ -9,21 +9,12 @@
  * @package Signature_Healthcare_of_Volusia
  */
 
+// Advanced Custom Fields
+$cfm_form_shortcode = get_field( 'cfm_form_shortcode' );
+
 ?>
 
-	<!-- Sign-up  -->
-	<section id="sign-up">
-		<div id="sign-up-overlay">
-			<div class="container">
-				<div class="row">
-					<div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
-						<h2>Are you ready for healthcare the way it <strong>should</strong> be?</h2>
-						<p><button class="btn btn-lg btn-block btn-success" data-toggle="modal" data-target="#contactModal">Yes, contact me for a no cost consultation!</button></p>
-					</div><!--/.col-->
-				</div><!--/.row-->
-			</div><!--/.container-->
-		</div>
-	</section><!--/#sign-up-->
+<?php get_template_part( 'template-parts/footer', 'contact_ad' ); ?>
 
 	<!-- Footer -->
 	<footer>
@@ -87,30 +78,12 @@
 
 				<div class="modal-body">
 					<p>Simply enter your name, email, and a message. Please leave a phone number if you would like a call back from our office.</em></p>
-					<form role="form">
-						<div class="form-group">
-							<label class="sr-only" for="contact-name">Your name</label>
-							<input type="text" class="form-control" id="contact-name" placeholder="Your name">
-						</div><!--/.form-group-->
-						<div class="form-group">
-							<label class="sr-only" for="contact-email">Your email</label>
-							<input type="text" class="form-control" id="contact-email" placeholder="Your email">
-						</div><!--/.form-group-->
-						<div class="form-group">
-							<label class="sr-only" for="contact-phone">Your phone number</label>
-							<input type="text" class="form-control" id="contact-phone" placeholder="Your phone number">
-						</div><!--/.form-group-->
-						<div class="form-group">
-							<label class="sr-only" for="contact-message">Your message</label>
-							<textarea class="form-control input-lg" id="contact-message" placeholder="Your message" rows="3"></textarea>
-						</div><!--/.form-group-->
 
-						<input type="submit" class="btn btn-danger" value="Send">
+					<?php echo do_shortcode($cfm_form_shortcode); ?>
 
-						<hr>
+					<hr>
 
-						<p><small>Your privacy is important to us. Please do not send any sensitive medical information with this form. We cannot guarantee your information will be privileged and confidential.</small></p>
-					</form>
+					<p><small>Your privacy is important to us. Please do not send any sensitive medical information with this form. We cannot guarantee your information will be privileged and confidential.</small></p>
 				</div><!--/.modal-body-->
 
 			</div><!--/.modal-content-->
