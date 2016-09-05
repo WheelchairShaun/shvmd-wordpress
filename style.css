@@ -950,6 +950,10 @@ textarea {
 		font-size: 14px;
 	}
 
+	.better-healthcare-content, .who-member-content {
+		padding: 0 35px;
+	}
+
 	footer nav {
 		margin-bottom: 40px;
 	}

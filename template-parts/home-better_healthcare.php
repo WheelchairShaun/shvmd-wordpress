@@ -19,7 +19,7 @@ $bh_reason_2_paragraph		= get_field( 'bh_reason_2_paragraph' );
 
 <!-- Better Healthcare -->
 <section id="better-healthcare">
-	<div class="container">
+	<div class="container better-healthcare-content">
 
 		<div class="section-header">
 			<h2><?php echo $bh_headline; ?></h2>

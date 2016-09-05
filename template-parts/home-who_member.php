@@ -15,14 +15,14 @@ $wm_content				= get_field( 'wm_content' );
 
 <!-- Who Member -->
 <section id="who-member">
-	<div class="container">
+	<div class="container who-member-content">
 		
 		<div class="section-header">
 			<h2><?php echo $wm_headline; ?></h2>
 		</div><!--/.section-header-->
 
 		<div class="row">
-			<div class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2">
+			<div class="col-xs-12 col-sm-12 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2">
 
 				<?php echo $wm_content; ?>
 				
