@@ -44,7 +44,7 @@ $seo_keywords		= get_field( 'seo_keywords', 7 );
 
 </head>
 
-<body <?php body_class(); ?>>
+<body <?php body_class(); ?> id="top" data-spy="scroll" data-target=".navbar-collapse" data-offset="51">
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'shvmd' ); ?></a>
 

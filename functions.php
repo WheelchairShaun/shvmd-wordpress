@@ -155,3 +155,44 @@ function shvmd_contact_menu_atts( $atts, $item, $args )
   }
   return $atts;
 }
+
+/**
+ * Add filter to nav_menu_class so current_menu_item receives a class of active
+ */
+add_filter('nav_menu_css_class' , 'shvmd_add_nav_class_active' , 10 , 2);
+function shvmd_add_nav_class_active($classes, $item){
+	$menu_exceptions = array( 45, 46 );  // Do not add .active to these in page anchors
+
+	if( in_array('current-menu-item', $classes) ){
+		if( !in_array( $item->ID, $menu_exceptions ) ) {
+			$classes[] = 'active ';
+		}
+	}
+	return $classes;
+}
+
+/**
+ * Add filter to modify a specific menu item based on the post ID for scrollspy
+ */
+add_filter( 'nav_menu_link_attributes', 'shvmd_scrollspy_menu_atts', 10, 3 );
+function shvmd_scrollspy_menu_atts( $atts, $item, $args )
+{
+	// Get current page's post id
+	$url = explode('?', 'http://'.$_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"]);
+	$current_post_id = url_to_postid($url[0]);
+
+	if( $current_post_id == 7 ) {
+		// The IDs of the target menu items
+  		$menu_targets = array( 44, 45 );
+
+		// inspect $item
+  		if ( in_array( $item->ID, $menu_targets ) ) {
+  			if ($item->ID == 44) {
+				$atts['href'] = '#top';
+			} else {
+				$atts['href'] = '#doctor';
+			}
+		}
+	}
+  	return $atts;
+}
