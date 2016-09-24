@@ -72,7 +72,7 @@ $seo_keywords		= get_field( 'seo_keywords', 7 );
 							'theme_location'	=> 'primary',
 							'container'			=> 'div',
 							'container_class'	=> 'collapse navbar-collapse',
-							'container_id'		=> 'shvmd-menu',
+							'container_id'		=> 'navbar',
 							'menu_class'		=> 'nav navbar-nav',
 
 						)
