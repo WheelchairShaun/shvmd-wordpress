@@ -827,8 +827,7 @@ textarea {
 	}
 
 	#hero {
-		background: url('/wp-content/themes/shvmd/img/hero-bg-md.jpg') center 0 no-repeat;
-		min-height: 699px;
+		background: url('/wp-content/themes/shvmd/img/hero-bg.jpg') 39% 0 no-repeat;
 	}
 
 	#hero .hero-subtitle {

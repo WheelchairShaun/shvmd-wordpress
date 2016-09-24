@@ -25,7 +25,7 @@ $hero_hours_2			= get_field( 'ci_office_hours_2' );
 <section class="jumbotron" id="hero">
 	<div class="container">
 		<div class="row">
-			<div class="col-xs-12 col-sm-12 col-md-8 col-lg-6 hero-ad">
+			<div class="col-xs-12 col-sm-12 col-md-7 col-lg-6 hero-ad">
 				<h1 class="hero-title">
 				<?php if( !empty($hero_logo_image) ) : ?>
 					<img src="<?php echo $hero_logo_image['url']; ?>" alt="<?php echo $hero_logo_image['alt']; ?>">
@@ -42,7 +42,7 @@ $hero_hours_2			= get_field( 'ci_office_hours_2' );
 
 	<div class="container">
 		<div class="row">
-			<div class="col-xs-12 col-sm-12 col-md-8 col-lg-6 hero-ad">
+			<div class="col-xs-12 col-sm-12 col-md-7 col-lg-6 hero-ad">
 
 				<div id="call-now">
 					<div class="phone">
