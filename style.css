@@ -552,7 +552,7 @@ a.btn {
 /* Hero Section */
 
 #hero {
-	background: url('/wp-content/themes/shvmd/img/hero-bg.jpg') no-repeat 40% 0px;
+	background: #385BAB url('/wp-content/themes/shvmd/img/hero-bg.jpg') no-repeat 40% 0px;
 	padding: 0 0 20px;
 	margin-bottom: 0;
 	min-height: 799px;
@@ -827,7 +827,7 @@ textarea {
 	}
 
 	#hero {
-		background: url('/wp-content/themes/shvmd/img/hero-bg.jpg') 39% 0 no-repeat;
+		background: #385BAB url('/wp-content/themes/shvmd/img/hero-bg.jpg') 39% 0 no-repeat;
 	}
 
 	#hero .hero-subtitle {
@@ -901,6 +901,11 @@ textarea {
 		font-size: 18px;
 	}
 
+	#hero {
+		background: #385BAB url('/wp-content/themes/shvmd/img/hero-bg-sm.jpg') center 0 no-repeat;
+		min-height: 1261px
+	}
+
 	#member-benefits .benefit {
 		padding: 15px 0;
 	}
@@ -927,9 +932,9 @@ textarea {
 	}
 
 	#hero {
-		background: url('/wp-content/themes/shvmd/img/hero-bg-xs.jpg') center 0 no-repeat;
-		min-height: 960px;
-		padding-top: 48px;
+		background: #385BAB url('/wp-content/themes/shvmd/img/hero-bg-xs.jpg') center 0 no-repeat;
+		min-height: 1177px;
+		padding-top: 24px;
 	}
 
 	#hero .hero-subtitle {
@@ -941,7 +946,7 @@ textarea {
 	}
 
 	#call-now {
-		margin: 120px 0 100px;
+		margin: 20px 0 40px;
 	}
 
 
