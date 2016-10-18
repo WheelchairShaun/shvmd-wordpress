@@ -687,7 +687,8 @@ section h3 {
 }
 
 #doctor {
-	background: url('/wp-content/themes/shvmd/img/drmercer-bg.jpg') 58% 28% no-repeat;
+	background: url('/wp-content/themes/shvmd/img/drmercer-bg.jpg') 52% center no-repeat;
+	background-size: cover;
 	min-height: 750px;
 }
 
@@ -847,7 +848,8 @@ textarea {
 
 
 	#doctor {
-		background: url('/wp-content/themes/shvmd/img/drmercer-bg.jpg') 47% 28% no-repeat;
+		background: url('/wp-content/themes/shvmd/img/drmercer-bg.jpg') 50% center no-repeat;
+		background-size: cover;
 	}
 }
 
@@ -902,7 +904,7 @@ textarea {
 	}
 
 	#hero {
-		background: #385BAB url('/wp-content/themes/shvmd/img/hero-bg-sm.jpg') center 0 no-repeat;
+		background: #385BAB url('/wp-content/themes/shvmd/img/hero-bg-sm.jpg') center top no-repeat;
 		min-height: 1261px
 	}
 
@@ -912,7 +914,7 @@ textarea {
 
 	#doctor {
 		background: url('/wp-content/themes/shvmd/img/drmercer-bg-sm.jpg') center top no-repeat;
-		padding-top: 1060px;
+		padding-top: 722px;
 	}
 
 }
@@ -961,7 +963,7 @@ textarea {
 
 	#doctor {
 		background: url('/wp-content/themes/shvmd/img/drmercer-bg-xs.jpg') center top no-repeat;
-		padding-top: 860px;
+		padding-top: 572px;
 	}
 
 	#sign-up .btn {
