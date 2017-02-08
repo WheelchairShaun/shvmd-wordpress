@@ -42,6 +42,8 @@ $seo_keywords		= get_field( 'seo_keywords', 7 );
 		<script src="<?php bloginfo( 'stylesheet_directory' ); ?>/js/respond-1.4.2.min.js"></script>
 	<![endif]-->
 
+	<?php get_template_part( 'template-parts/header', 'company_json' ); ?>
+
 </head>
 
 <body <?php body_class(); ?> id="top" data-spy="scroll" data-target=".navbar-collapse" data-offset="51">

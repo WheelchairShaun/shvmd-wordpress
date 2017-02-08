@@ -36,12 +36,12 @@ $footer_hours_2				= get_field( 'ci_office_hours_2', 7 );
 <address>
 	<div class="vcard">
 		<div class="fn n">
-			<?php echo !empty( $footer_honorific_prefix) ? '<span class="honorific-prefix">' . $footer_honorific_prefix . '</span> ' : ''; ?><span class="given-name"><?php echo $footer_given_name; ?></span><?php echo !empty( $footer_additional_name) ? ' <span class="additional-name">' . $footer_additional_name . '</span>' : ''; ?> <span class="family-name"><?php echo $footer_family_name; ?></span><?php echo !empty( $footer_honorific_suffix) ? ', <span class="honorific-suffix">' . $footer_honorific_suffix . '</span>' : ''; ?>
+			<?php echo !empty( $footer_honorific_prefix ) ? '<span class="honorific-prefix">' . $footer_honorific_prefix . '</span> ' : ''; ?><span class="given-name"><?php echo $footer_given_name; ?></span><?php echo !empty( $footer_additional_name ) ? ' <span class="additional-name">' . $footer_additional_name . '</span>' : ''; ?> <span class="family-name"><?php echo $footer_family_name; ?></span><?php echo !empty( $footer_honorific_suffix ) ? ', <span class="honorific-suffix">' . $footer_honorific_suffix . '</span>' : ''; ?>
 		</div>
 		<div class="org">
 			<div class="organization-name"><?php echo $footer_organization_name; ?></div>
 		</div>
-		<?php if( !empty(footer_photo) ) : ?>
+		<?php if( !empty( $footer_photo ) ) : ?>
 			<img class="photo" src="<?php echo $footer_photo['url']; ?>" alt="<?php echo $footer_photo['alt']; ?>">
 		<?php else : ?>
 			<img class="photo" src="<?php bloginfo( 'template_directory' ); ?>/img/hcard.jpg" alt="Portrait of Jason R. Mercer, M.D.">
