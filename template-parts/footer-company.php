@@ -8,6 +8,14 @@
  */
 
 // Advanced Custom Fields
+$footer_honorific_prefix	= get_field( 'ci_honorific_prefix', 7);
+$footer_given_name			= get_field( 'ci_given_name', 7);
+$footer_additional_name		= get_field( 'ci_additional_name', 7);
+$footer_family_name			= get_field( 'ci_family_name', 7);
+$footer_honorific_suffix	= get_field( 'ci_honorific_suffix', 7);
+
+$footer_photo				= get_field( 'ci_photo');
+
 $footer_organization_name	= get_field( 'ci_company_name', 7 );
 $footer_street_address		= get_field( 'ci_street_address', 7 );
 $footer_extended_address	= get_field( 'ci_extended_address', 7 );
@@ -27,15 +35,21 @@ $footer_hours_2				= get_field( 'ci_office_hours_2', 7 );
 
 <address>
 	<div class="vcard">
-		<div class="org fn">
+		<div class="fn n">
+			<?php echo !empty( $footer_honorific_prefix) ? '<span class="honorific-prefix">' . $footer_honorific_prefix . '</span> ' : ''; ?><span class="given-name"><?php echo $footer_given_name; ?></span><?php echo !empty( $footer_additional_name) ? ' <span class="additional-name">' . $footer_additional_name . '</span>' : ''; ?> <span class="family-name"><?php echo $footer_family_name; ?></span><?php echo !empty( $footer_honorific_suffix) ? ', <span class="honorific-suffix">' . $footer_honorific_suffix . '</span>' : ''; ?>
+		</div>
+		<div class="org">
 			<div class="organization-name"><?php echo $footer_organization_name; ?></div>
 		</div>
+		<?php if( !empty(footer_photo) ) : ?>
+			<img class="photo" src="<?php echo $footer_photo['url']; ?>" alt="<?php echo $footer_photo['alt']; ?>">
+		<?php else : ?>
+			<img class="photo" src="<?php bloginfo( 'template_directory' ); ?>/img/hcard.jpg" alt="Portrait of Jason R. Mercer, M.D.">
+		<?php endif; ?>
 		<div class="adr">
-			<div class="street-address"><?php echo $footer_street_address; ?></div>
-			<?php echo !empty( $footer_extended_address ) ? '<div class="street-address">' . $footer_extended_address . '</div>' : ''; ?>
-			<span class="locality"><?php echo $footer_locality; ?></span>, 
-			<span class="region"><?php echo $footer_region; ?></span> 
-			<span class="postal-code"><?php echo $footer_postal_code; ?></span>
+			<span class="street-address"><?php echo $footer_street_address; ?></span>
+			<?php echo !empty( $footer_extended_address ) ? '<span class="extended-address">' . $footer_extended_address . '</span>' : ''; ?>
+			<span class="locality"><?php echo $footer_locality; ?></span>, <span class="region"><?php echo $footer_region; ?></span> <span class="postal-code"><?php echo $footer_postal_code; ?></span>
 		</div>
 		<div class="tel">
 			<span class="type">Voice</span> <span class="value"><?php echo $footer_voice; ?></span>

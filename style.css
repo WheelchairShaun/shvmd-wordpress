@@ -755,8 +755,20 @@ footer address .vcard .organization-name {
 	font-weight: bold;
 }
 
+footer address .vcard img.photo {
+	display: none;
+}
+
 footer address .vcard .adr {
 	padding-bottom: 15px;
+}
+
+footer address .vcard .adr .street-address {
+	display: block;
+}
+
+footer address .vcard .adr .extended-address {
+	display: block;
 }
 
 footer address .vcard .tel span.type {
@@ -915,6 +927,14 @@ textarea {
 		min-height: 1261px
 	}
 
+	#hero .hero-subtitle {
+		margin-bottom: 40px;
+	}
+
+	#call-now {
+		margin: 20px 0 60px;
+	}
+
 	#member-benefits .benefit {
 		padding: 15px 0;
 	}
@@ -948,6 +968,12 @@ textarea {
 
 	#hero .hero-subtitle {
 		padding: 20px;
+		margin-bottom: 60px;
+		line-height: 1.4;
+	}
+
+	#hero .hero-subtitle span {
+		padding-bottom: 0;
 	}
 
 	#hero .hero-text {
@@ -955,7 +981,7 @@ textarea {
 	}
 
 	#call-now {
-		margin: 20px 0 40px;
+		margin: 20px 0 80px;
 	}
 
 
@@ -981,6 +1007,10 @@ textarea {
 		padding: 0 35px;
 	}
 
+	footer .container {
+		padding-left: 35px;
+	}
+
 	footer nav {
 		margin-bottom: 40px;
 	}
@@ -989,5 +1019,11 @@ textarea {
 @media screen and (max-width: 600px) {
 	#wpadminbar {
 		position: fixed;
+	}
+}
+
+@media screen and (max-width: 550px) {
+	#doctor {
+		background-position: 17% 0%;
 	}
 }

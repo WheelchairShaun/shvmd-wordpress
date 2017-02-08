@@ -77,7 +77,7 @@ $cfm_form_shortcode = get_field( 'cfm_form_shortcode', 7 );
 				</div><!--/.modal-header-->
 
 				<div class="modal-body">
-					<p>Simply enter your name, email, and a message. Please leave a phone number if you would like a call back from our office.</em></p>
+					<p>Simply enter your name, email, subject, and a message. Please leave a phone number if you would like a call back from our office.</em></p>
 
 					<?php echo do_shortcode($cfm_form_shortcode); ?>
 

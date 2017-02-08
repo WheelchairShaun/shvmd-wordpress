@@ -35,7 +35,7 @@ $hero_hours_2			= get_field( 'ci_office_hours_2' );
 				</h1>
 
 				<h2 class="hero-subtitle"><span><?php echo $hero_headline_1; ?></span><?php echo !empty($hero_headline_2) ? ' ' . $hero_headline_2 : ''; ?></h2>
-				<p class="hero-text"><?php echo $hero_description; ?></p>
+				<?php echo !empty($hero_description) ? '<p class="hero-text">' . $hero_description . '</p>' : ''; ?>
 			</div>
 		</div>
 	</div>
